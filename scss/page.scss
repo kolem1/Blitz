@@ -1,0 +1,241 @@
+.content__row {
+    display: flex;
+    margin: 0 -33px;
+}
+
+.main {
+    flex: 0 1 650px;
+    margin: 0 33px;
+}
+
+.underline {
+    margin: 10px 0 20px;
+	padding: 0;
+	height: 6px;
+	border: none;
+	box-sizing: border-box;
+	background-position: 50%;
+	color: #d2d2d2;
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="6px" viewBox="0 0 3 3" fill="rgb(210, 210, 210);"><polygon points="0,3 0.5,3 1.5,1.5 3,0 2.5,0"></polygon></svg>');
+	background-size: 6px 6px;
+}
+
+.title {
+
+    &__h1 {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        font-weight: 400;
+        color: #474747;
+        margin-bottom: 5px;
+    }
+
+    &__p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: #9e9e9e;
+        max-width: 530px;
+    }
+}
+
+.blog {
+
+		&__title {
+            margin-bottom: 60px;            
+		}
+
+		
+
+		&__block {
+            margin-bottom: 110px;
+            &:nth-last-child(2) {
+                margin-bottom: 45px;
+            }
+		}
+
+		&__selector {
+            display: flex;
+            margin: 0 -3.5px 50px;
+        }
+        
+        &__dots {
+            width: 23px;
+            height: 5px;
+            background-color: #9a9a9a;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 3.5px;
+            &:hover {
+                background-color: #444444;
+            }
+        }
+
+        &__dots--active {
+            background-color: #e8e6e6;
+        }
+}
+.block {
+
+		&__title {
+            font-family: 'Bebas Neue';
+            font-size: 18px;
+            font-weight: 400;
+            color: #464646;
+            margin-bottom: 14px;
+		}
+
+		&__image {
+            width: 100%;
+            margin-bottom: 22px;
+            img {
+                max-width: 100%;
+            }
+		}
+
+		&__body {
+            display: flex;
+		}
+
+		&__info {
+
+            flex: 0 1 150px;
+
+            h3 {
+                font-family: 'Bebas Neue';
+                font-size: 15px;
+                font-weight: 400;
+                color: #464646;
+                margin-bottom: 7px;
+            }
+            div {
+                margin-bottom: 12px;
+            }
+		}
+
+		&__date {
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: #bababa;
+            }
+		}
+
+		&__tags {
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: #bababa;
+            }
+		}
+
+		&__coments {
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: #bababa;
+            }
+		}
+
+		&__text {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #414141;
+            flex: 0 2 500px;
+            p {
+                margin-bottom: 25px;
+            }
+            p:last-child {
+                margin: 0;
+            }
+		}
+}
+
+.aside {
+    flex: 0 1 230px;
+    margin: 55px 33px 0;
+
+    &>div {
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-family: 'Bebas Neue';
+        font-size: 16px;
+        font-weight: 400;
+        color: #464646;
+    }
+
+    &__about {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #464646;
+    }
+
+    &__categories {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #464646;
+        a {
+            span {
+                position: relative;
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0.1em;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: #212121;
+                    transition: all 0.3s;
+                }
+                
+            }
+            &:hover {
+                color: #212121;
+                & span:before {
+                    width: 100%;
+                    left: 0;
+                    background: #212121;
+                }
+            }
+        }
+    }
+}
+
+.twitter {
+    &__tweet {
+
+        p {
+            margin-bottom: 4px;
+        }
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #464646;
+        margin-bottom: 20px;
+        span {
+            color: #bababa;
+        }
+    }
+    
+    &__date {
+        color: #bababa;
+    }
+    
+}
+
+.categories {
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,96 @@
+
+.contact {
+
+	&__text {
+        margin: 58px 0 0 0;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: #464646;
+        margin: 0 0 38px 0;
+        p {
+            margin: 0 0 20px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+	}
+}
+
+.form {
+
+    input {
+        background-color: #fafafa;
+        border: 1.0px solid #eeeeee;
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+        margin-bottom: 10px;
+        font-family: 'Bebas Neue';
+        font-size: 15px;
+        font-weight: 400;
+        color: #c6c6c6;
+        width: 45%;
+    }
+
+    &__message {
+        background-color: #fafafa;
+        border: 1.0px solid #eeeeee;
+        font-family: 'Bebas Neue';
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #c6c6c6;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    &__submit {
+        width: 65px;
+        text-transform: uppercase;
+        background-color: #fdfdfd;
+        margin-bottom: 240px;
+        button {
+            text-transform: uppercase;
+            background-image: url(../img/featured/04.svg);
+            background-repeat: no-repeat;
+            background-position: 0 2px;
+            padding-left: 25px;
+        }
+        span {
+            font-family: 'Bebas Neue';
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+            background-image: url(../img/featured/04.svg);
+            background-repeat: no-repeat;
+            background-position: 0 2px;
+            padding-left: 25px;
+            color: #474747;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0.1em;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #212121;
+                transition: all 0.3s;
+            }
+            
+        }
+        &:hover {
+            color: #212121;
+            & span:before {
+                width: 100%;
+                left: 0;
+                background: #212121;
+            }
+        }
+    }
+}
+
+
+
